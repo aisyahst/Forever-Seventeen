@@ -9,7 +9,7 @@ html {
 }
 .hero{
     background-color: #000000b0; 
-    background-image: url(../images/herobg.jpg);
+    background-image: url(herobg.jpg);
     background-size: cover;
     background-blend-mode: multiply;
 }
