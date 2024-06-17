@@ -1,12 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'work-sans', sans-serif;
+    font-family: 'dm-sans', sans-serif;
 }
 
 html {
-    background-color: #f7f7f7;
+    background-color: #37333b;
     overflow-x: hidden;
+    color: #f7f7f7;
 }
 .hero{
     background-color: #000000b0; 
@@ -15,9 +16,7 @@ html {
     background-blend-mode: multiply;
 }
 .navbar {
-    /* background-color: #000; */
     list-style: none;
-    color: #e6e6e4;
     text-align: end;
 }
 .navbar li {
@@ -25,33 +24,32 @@ html {
     padding: 10px 20px;
 }
 .navbar a {
-    color: #e6e6e4;
+    color: #f7f7f7;
     font-size: 1.5rem;
-    
 }
 
 ul {
     padding-top: 20px;
 }
 .hero-text {
-color: #e6e6e4;
+color: #f7f7f7;
 padding: 400px 20px 20px 20px;
 }
 
 .welcome {
   display: flex;
   justify-content: center;
-  color: #323f4b;
+  color: #f7f7f7;
   padding-top: 5%;
   padding-bottom: 5px;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bolder;
   width: 100%;
 }
 
 .lining {
   width: 90%;
-  border-top: 3px solid #323f4b;
+  border-top: 3px solid #f7f7f7;
 
 }
 .profile-tab {
@@ -78,11 +76,11 @@ padding: 400px 20px 20px 20px;
 .content3 {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #e4e7eb;
+    background-color: #2c2831;
     display: flex;
     flex: 1;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .image-collage {
@@ -106,13 +104,13 @@ padding: 400px 20px 20px 20px;
 .caption-title {
   text-align: right;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 4rem;
     padding-bottom: 1rem;
-    color: #323f4b;
+    color: #f7f7f7;
 }
 .caption-text {
     text-align: right;
-    color: #323f4b;
+    color: #cfcfcf;
     line-height: 1.5rem;
     font-size: 1.5rem;
 }
@@ -163,7 +161,7 @@ padding: 400px 20px 20px 20px;
     background-color: #e4e7eb;
     padding: 20px;
     padding: 20px;
-    color: #323f4b;
+    color: #2c2831;
   }
 
   .text-footer1 {
@@ -228,12 +226,22 @@ text-decoration: underline;
 padding-bottom: 1.5rem;
 }
 
+
+@media screen and (max-width:840px) {
+.caption-title {
+    font-size:3.5rem;
+}
+}
+
+
 /* medium tablet screen */
 @media screen and (max-width: 769px) {
   .hero-text {
     padding: 300px 20px 20px 20px ;
   }
-  
+  .welcome {
+    font-size:2rem;
+  }
   .content3 {
     flex-wrap: wrap;
     justify-content: center;
@@ -255,13 +263,19 @@ padding-bottom: 1.5rem;
     padding: 0;
   }
 
-  .caption-image-collage p{
-    text-align: center;
-
-  }
+    .caption-title {
+        width:70%;
+        padding: 10px 0 30px 60px;
+        text-align: left;
+    }
+    .caption-text {
+        width: 80%;
+        padding: 20px 50px 30px 80px;
+        text-align:right;
+    }
 
   .caption-image-collage {
-    padding: 0;
+    padding: 20px;
   }
   .container {
     padding: 20px;
@@ -276,7 +290,9 @@ padding-bottom: 1.5rem;
   .hero-text {
     padding: 250px 20px 20px 20px;
   }
-  
+  .title {
+      font-size:2.5rem;
+  }
 }
 
 @media screen and (max-width:570px) {
@@ -297,8 +313,14 @@ padding-bottom: 1.5rem;
     padding: 20px 0;
   }
 
+    .caption-title {
+        font-size:1.625rem;
+        padding: 0 0 0 50px;
+    }
   .caption-text {
     font-size:1.5em ;
+    padding: 0 0 30px 0 50px;
+    
   }
 }
 
@@ -312,7 +334,13 @@ padding-bottom: 1.5rem;
   }
   
 }
-
+@media screen and (max-width:490px) {
+.caption-title, .caption-text {
+    padding:0;
+    width:100%;
+}
+    
+}
 @media screen and (max-width: 380px) {
   .navbar a {
     font-size: 1rem;
